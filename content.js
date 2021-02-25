@@ -24,12 +24,12 @@ var images=new Array("url(https://th.bing.com/th/id/OIP.t4tfw0VMBLD8rUi4qZ6-rwHa
 var userSelection=parseInt(prompt("enter a number between 1&5 to chose \n background"));
 document.body.style["background-image"] = images[userSelection];
 var default_image = document.getElementById('default_image');
+for (var j=1;j<=userSelection;j++){
+
 function imgloop()
   {
     var ar = [];
     ar.push("https://th.bing.com/th/id/OIP.zEi3upbdEgU2CmRVe8WBiAHaD-?pid=ImgDet&rs=1");
-    ar.push("https://th.bing.com/th/id/Rad7d773bf3ad277fc8b5df124fde2ca3?rik=%2bT%2fbsNO8dNbpXQ&riu=http%3a%2f%2fwww.groundreport.com%2fwp-content%2fuploads%2f2016%2f11%2fProgramming-Languages-1.jpg&ehk=0G%2fXewDFd%2bsDqAotUtJte%2fnnJ3pC7IvZgDvvNnJzh8k%3d&risl=&pid=ImgRaw");
-    ar.push("https://th.bing.com/th/id/OIP.pa9QIgVrWe-Nq8KESBsARQHaEK?pid=ImgDet&rs=1");
     for (i = 0; ar.length > i; i++)
     {
       var img = new Image(200, 200);
@@ -40,4 +40,5 @@ function imgloop()
     }
   }
   imgloop();
+}
 }
